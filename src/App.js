@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
-const Father = styled.div`
+const Wrapper = styled.div`
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: ${(props) => props.theme.textColor};
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 const Box = styled.div`
-  background-color: ${(props) => props.bgColor};
   width: 100px;
   height: 100px;
 `;
 
-const Circle = styled(Box)`
-  border-radius: 50px;
-`
-
 function App() {
   return (
-    <Father>
-      <Box bgColor="teal" />
-      <Circle bgColor="tomato" />
-    </Father>
+    <Wrapper>
+      <Box>Hello world!</Box>
+    </Wrapper>
   );
 }
 
