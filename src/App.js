@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -16,6 +17,7 @@ const Box = styled.div`
 `;
 
 function App() {
+
   return (
     <Wrapper>
       <Box>Hello world!</Box>
